@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #800080, #000000, #0000FF, #800080, #4B0082, #0000FF, #4000ff, #800080);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: white;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+}
+h5 {
+    text-align: center;
+    color: #000;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #ffffff;
+}
+
+.output-box {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255); /* Changed to yellow */
+}
+
+#changedLink {
+    margin-bottom: 10px;
+    color: #000000;
+
+}
+
+.glow-on-hover {
+    box-shadow: 0 0 10px #ffffff;
+    transition: 0.3s;
+}
+
+.glow-on-hover:hover {
+    box-shadow: 0 0 20px #33ff33;
+    transition: 0.3s;
+}
+
+/* Gradient hover effect */
+.glow-on-hover:hover {
+    background: linear-gradient(45deg, #800080, #4B0082, #0000FF, #00FF00, #FFFF00, #FFA500, #FF0000, #800080);
+    background-size: 400% 400%;
+    animation: gradientHover 3s ease infinite;
+}
+
+@keyframes gradientHover {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
